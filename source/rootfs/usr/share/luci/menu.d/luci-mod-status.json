@@ -1,0 +1,13 @@
+{
+	"admin/status/overview": {
+		"title": "Overview",
+		"order": 1,
+		"action": {
+			"type": "template",
+			"path": "admin_status/index"
+		},
+		"depends": {
+			"acl": [ "luci-mod-status-index" ]
+		}
+	}
+}
