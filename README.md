@@ -1,6 +1,6 @@
 ## OpenWrt stock to ubootmod converter on Zyxel EX5601-T0 ( Project C)
 This tool is for you if you have Openwrt ( stock layout) installed on EX5601-T0 / T-56 router and you want to...
-> Convert Openwrt stock layout to Openwrt ubootmod layout
+> Convert Openwrt stock layout to Openwrt ubootmod layout ( best work on openwrt-24.10.2 stock layout)
 
 > [!WARNING]
 > Power loss during flash can brick the device.
