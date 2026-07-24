@@ -34,7 +34,8 @@ return view.extend({
 
 		var stockButton = E('button', {
 			'class': 'cbi-button cbi-button-apply',
-			'style': 'margin-right:12px'
+			'style': 'margin-right:12px',
+			'disabled': 'disabled'  // Add this line
 		}, [ _('Flash OpenWrt-Stock Layout') ]);
 
 		var ubootmodButton = E('button', {
@@ -104,7 +105,7 @@ return view.extend({
 				if (res && res.log)
 					logBox.textContent = res.log;
 			}).catch(function() {
-				logBox.textContent = 'Unable to read Matrix status.';
+				logBox.textContent = 'Wait for two minute before connect to router at 192.168.1.1';
 			});
 		}
 

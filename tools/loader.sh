@@ -48,6 +48,9 @@ cp "$MATRIX/etc/matrix_flash_runner.sh" /tmp/ || fail "matrix_flash_runner.sh mi
 cp "$MATRIX/etc/matrix_boot_initramfs.sh" /tmp/ || fail "matrix_boot_initramfs.sh missing"
 cp "$MATRIX/etc/matrix_ubootmod_runner.sh" /tmp/ || fail "matrix_ubootmod_runner.sh missing"
 cp "$MATRIX/etc/initramfs.bin" /tmp/ || fail "initramfs.bin missing"
+cp "$MATRIX/etc/zl34.bin" /tmp/ || fail "zloader is missing"
+cp "$MATRIX/etc/fip.bin" /tmp/ || fail "FIP is missing"
+cp "$MATRIX/etc/mtd-rw.ko" /tmp/ || fail "KMOD is missing"
 
 chmod +x /tmp/matrix_flash_inactive.sh
 chmod +x /tmp/matrix_flash_runner.sh
